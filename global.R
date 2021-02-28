@@ -83,7 +83,7 @@ list.of.bioc.packages<- c("rhdf5",
 #source("https://bioconductor.org/biocLite.R")
 #if(length(new.packages.bioc)>0) biocLite(new.packages.bioc,suppressUpdates=TRUE)
 
-lapply(c(list.of.dev.packages,list.of.packages,list.of.bioc.packages), require, character.only = TRUE)
+pacman::p_load(c(list.of.dev.packages,list.of.packages,list.of.bioc.packages), character.only = TRUE)
 
 
 

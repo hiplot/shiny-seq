@@ -5,11 +5,11 @@ list.of.dev.packages <- c("plotly",
                           "DT")
 
 
-new.packages.dev <- list.of.dev.packages[!(list.of.dev.packages %in% installed.packages()[,"Package"])]
+#new.packages.dev <- list.of.dev.packages[!(list.of.dev.packages %in% installed.packages()[,"Package"])]
 
-if( "plotly" %in% new.packages.dev) devtools::install_github("ropensci/plotly", upgrade = "never")
-if( "crosstalk" %in% new.packages.dev) devtools::install_github("rstudio/crosstalk",force=TRUE, upgrade = "never")
-if( "DT" %in% new.packages.dev) devtools::install_github('rstudio/DT', upgrade = "never")
+#if( "plotly" %in% new.packages.dev) devtools::install_github("ropensci/plotly", upgrade = "never")
+#if( "crosstalk" %in% new.packages.dev) devtools::install_github("rstudio/crosstalk",force=TRUE, upgrade = "never")
+#if( "DT" %in% new.packages.dev) devtools::install_github('rstudio/DT', upgrade = "never")
 # 
 # 
 # library(plotly)
@@ -79,9 +79,9 @@ list.of.packages <- c("shiny",
 
 lapply(list.of.packages, require, character.only = TRUE)
 
-new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+#new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 
-if(length(new.packages)>0) install.packages(new.packages, dependencies = T)
+#if(length(new.packages)>0) install.packages(new.packages, dependencies = T)
 
 
 library(rhdf5)
